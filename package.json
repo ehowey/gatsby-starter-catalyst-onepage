@@ -1,7 +1,6 @@
 {
   "name": "gatsby-starter-catalyst-basic",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A basic site starter based on the Gatsby-Theme-Catalyst-Core",
   "version": "0.0.1",
   "author": "Eric Howey <ehowey@gmail.com>",
   "dependencies": {
@@ -15,7 +14,8 @@
     "prettier": "^1.17.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby-starter"
   ],
   "license": "MIT",
   "scripts": {
@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/ehowey/gatsby-starter-catalyst-basic"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ehowey/gatsby-starter-catalyst-basic/issues"
   }
 }
