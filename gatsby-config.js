@@ -1,25 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: `Catalyst Starter`,
+    title: `Catalyst Starter Onepage`,
     description: `Speed up your Gatsby development workflow. Designed as an opinionated and high speed starter.`,
     author: `Eric Howey`,
     menuLinks:[
           {
-            name:'Page 1',
-            link:'/page-1'
-          },
-          {
-            name:'Page 2',
-            link:'/page-2'
-          },
-          {
-            name:'Page 3',
-            link:'/page-3'
+            name:'Home',
+            link:'/'
           }
-            ]
+            ],
+    anchorLinks:[
+      {
+        name:'Anchor1',
+        link:'#anchor1'
+      },
+      {
+        name:'Anchor2',
+        link:'#anchor1'
+      },
+      {
+        name:'Anchor3',
+        link:'#anchor1'
+      }
+        ]
   },
     __experimentalThemes: [
-        'gatsby-theme-catalyst-core'
+        'gatsby-theme-catalyst-core',
+        'gatsby-theme-catalyst-onepage'
     ],
     plugins: [ 
       {
