@@ -1,6 +1,6 @@
 export default {
     color: {
-        primary: '#cccccc',
+        primary: '#9ce5f4',
         secondary: '#333333',
         textBlack: '#000000',
         textWhite: '#ffffff',
