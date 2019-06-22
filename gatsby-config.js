@@ -11,16 +11,16 @@ module.exports = {
             ],
     anchorLinks:[
       {
-        name:'Anchor1',
-        link:'#anchor1'
+        name:'About',
+        link:'#about'
       },
       {
-        name:'Anchor2',
-        link:'#anchor1'
+        name:'Work',
+        link:'#work'
       },
       {
-        name:'Anchor3',
-        link:'#anchor1'
+        name:'Talk to me',
+        link:'#contact'
       }
         ]
   },

@@ -1,23 +1,29 @@
 import React from "react";
 import styled from "styled-components";
-import { Link, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 const Section = styled.section`
-  background: #9CE5F4;
+  background: ${props => props.theme.color.primary};
 `
 
-const CTA = styled(Link)`
-  color: #333333;
-  border-bottom: 2px solid #333333;
+const CTA = styled.a`
+  color: ${props => props.theme.color.textBlack};
+  border: 2px solid #333333;
+  padding: 0.5rem 0.8rem;
+  border-radius: 24px;
+  transition-duration: 0.3s;
+  letter-spacing: 1px;
 
-  :hover {
+  &:hover {
     text-decoration: none;
-    opacity: 0.8;
+    background-color: ${props => props.theme.color.secondary};
+    color: ${props => props.theme.color.textWhite};
+    border-color: ${props => props.theme.color.secondary};
   }
 
-  ::after {
-    content: "\00A0 \2192";
+  &::after {
+    content: "\\00A0 \\2192";
   }
 `
 
@@ -40,6 +46,9 @@ const WelcomeContent = styled.div`
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 `
+const WelcomeTitle = styled.h1`
+  margin-bottom: 2rem;
+`
 
 
 const siteSection = () => {
@@ -59,8 +68,8 @@ const siteSection = () => {
               <WelcomeContainer>
                 <WelcomeImage fluid={data.welcomeImage.childImageSharp.fluid} alt="Arrangement of lightbulbs" imgStyle={{ width: 'auto', height: 'auto' }} />
                 <WelcomeContent>
-                  <h2>Amazing websites.<br />Done right the first time.</h2>
-                  <p><CTA to="/contact">Talk to me</CTA></p>
+                  <WelcomeTitle>Amazing websites.<br />Done right the first time.</WelcomeTitle>
+                  <CTA href="#contact">Talk to me</CTA>
                 </WelcomeContent>
             </WelcomeContainer>
         </Section>
