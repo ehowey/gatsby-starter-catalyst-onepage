@@ -12,7 +12,7 @@ const Section = styled.section`
 const WorkContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 3rem;
   max-width: 1024px;
   margin: 0 auto;
@@ -32,14 +32,23 @@ const WorkHeader = styled.h2`
 const WorkContent1 = styled.div`
 grid-column: 1 / -1;
 grid-row: 1 / 2;
+@media (min-width: ${props => props.theme.screen.tablet}) {
+  grid-column: 1 / 3;
+}
 `
 const WorkContent2 = styled.div`
 grid-column: 1 / -1;
 grid-row: 2 / 3;
+@media (min-width: ${props => props.theme.screen.tablet}) {
+  grid-column: 1 / 3;
+}
 `
 const WorkContent3 = styled.div`
 grid-column: 1 / -1;
 grid-row: 3 / 4;
+@media (min-width: ${props => props.theme.screen.tablet}) {
+  grid-column: 1 / 3;
+}
 `
 
 const WorkImage = styled(Img)`
@@ -70,26 +79,38 @@ height: 200px;
 width: 25%;
 `
 
+const AbsurdImage = styled(Img)`
+grid-column: 3 / 4;
+grid-row: 1 / -1;
+`
+
 const siteSection = () => {
     const data = useStaticQuery(graphql`
     query {
       projectImage1: file(relativePath: { eq: "images/lwb.png" }) {
         childImageSharp {
-          fluid(maxWidth:768) {
+          fluid(maxWidth:1024) {
             ...GatsbyImageSharpFluid_withWebp
               }
         }
       }
       projectImage2: file(relativePath: { eq: "images/brisharpe.png" }) {
         childImageSharp {
-          fluid(maxWidth:768) {
+          fluid(maxWidth:1024) {
             ...GatsbyImageSharpFluid_withWebp
               }
         }
       }
       projectImage3: file(relativePath: { eq: "images/gatsby-h.png" }) {
         childImageSharp {
-          fluid(maxWidth:768) {
+          fluid(maxWidth:1024) {
+            ...GatsbyImageSharpFluid_withWebp
+              }
+        }
+      }
+      projectAbsurd: file(relativePath: { eq: "images/absurd-faces-tall.png" }) {
+        childImageSharp {
+          fluid(maxWidth:400) {
             ...GatsbyImageSharpFluid_withWebp
               }
         }
@@ -127,6 +148,7 @@ const siteSection = () => {
                     <p>A great description of the site could go here that makes it sound amazing and awesome. Here is some more detail about why it is such a great project.</p>
                     </WorkText>
                   </WorkContent3>
+                  <AbsurdImage fluid={data.projectAbsurd.childImageSharp.fluid} alt="Life With Benjamin" imgStyle={{ objectFit: 'contain' }}/>
                 </WorkContainer>
             </Section>
     )
