@@ -10,12 +10,22 @@ const Section = styled.section`
 const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto;
   grid-gap: 3rem;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 1rem;
 `;
+
+const AboutHeader = styled.h1`
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  color: #f2f3f4;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-top: -2.5rem;
+  margin-left: -1.2rem;
+`
 
 const AboutContent1 = styled.div`
   grid-column: 1 / 3;
@@ -75,8 +85,9 @@ const siteSection = () => {
     }
     `)
     return (
-        <Section id="about">
+        <Section id="me">
             <AboutContainer>
+                <AboutHeader>Me</AboutHeader>
                 <AboutContent1>
                     <h3>I built my first website in 1998</h3>
                     <p>It sucked.</p>

@@ -11,8 +11,8 @@ module.exports = {
             ],
     anchorLinks:[
       {
-        name:'About',
-        link:'#about'
+        name:'Me',
+        link:'#me'
       },
       {
         name:'Work',

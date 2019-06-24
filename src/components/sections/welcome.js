@@ -38,13 +38,23 @@ const WelcomeContainer = styled.div`
 `
 
 const WelcomeImage = styled(Img)`
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+@media (min-width: ${props => props.theme.screen.tablet}) {
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+}
 `
 
 const WelcomeContent = styled.div`
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  align-self: center;
+  justify-self: center;
+@media (min-width: ${props => props.theme.screen.tablet}) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+}
 `
 const WelcomeTitle = styled.h1`
   margin-bottom: 2rem;
@@ -66,7 +76,7 @@ const siteSection = () => {
     return (
             <Section>
               <WelcomeContainer>
-                <WelcomeImage fluid={data.welcomeImage.childImageSharp.fluid} alt="Arrangement of lightbulbs" imgStyle={{ width: 'auto', height: 'auto' }} />
+                <WelcomeImage fluid={data.welcomeImage.childImageSharp.fluid} alt="Arrangement of lightbulbs" imgStyle={{ objectFit: 'contain' }} />
                 <WelcomeContent>
                   <WelcomeTitle>Amazing websites.<br />Done right the first time.</WelcomeTitle>
                   <CTA href="#contact">Talk to me</CTA>
