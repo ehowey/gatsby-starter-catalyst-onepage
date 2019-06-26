@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Catalyst Starter Onepage`,
+    title: `erichowey.dev`,
     description: `Speed up your Gatsby development workflow. Designed as an opinionated and high speed starter.`,
     author: `Eric Howey`,
     menuLinks:[
@@ -11,16 +11,16 @@ module.exports = {
             ],
     anchorLinks:[
       {
-        name:'Anchor1',
-        link:'#anchor1'
+        name:'Me',
+        link:'#me'
       },
       {
-        name:'Anchor2',
-        link:'#anchor1'
+        name:'Work',
+        link:'#work'
       },
       {
-        name:'Anchor3',
-        link:'#anchor1'
+        name:'Talk to me',
+        link:'#contact'
       }
         ]
   },
