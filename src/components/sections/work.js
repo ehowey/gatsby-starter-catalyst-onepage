@@ -12,8 +12,8 @@ const Section = styled.section`
 const WorkContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-gap: 3rem;
+  grid-template-rows: auto;
+  grid-row-gap: 3rem;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -40,7 +40,7 @@ const WorkContent2 = styled.div`
 grid-column: 1 / -1;
 grid-row: 2 / 3;
 @media (min-width: ${props => props.theme.screen.tablet}) {
-  grid-column: 1 / 3;
+  grid-column: 2 / 4;
 }
 `
 const WorkContent3 = styled.div`
@@ -53,20 +53,42 @@ grid-row: 3 / 4;
 
 const WorkImage = styled(Img)`
 clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-shape-outside: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 height: 200px;
 margin-bottom: 1rem;
 `
+
+const WorkImageAlt = styled(Img)`
+clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+height: 200px;
+margin-bottom: 1rem;
+`
+
 const WorkText = styled.div`
 background-color: #ffffff;
 height: 200px;
 padding: 1rem;
 clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
 `
+
+const WorkTextAlt = styled.div`
+background-color: #ffffff;
+height: 200px;
+padding: 1rem;
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+`
+
 const Tleft = styled.div`
 float: left;
 clip-path: polygon(15% 0, 100% 85%, 100% 100%, 0 100%, 0 0);
 shape-outside: polygon(15% 0, 100% 85%, 100% 100%, 0 100%, 0 0);
+height: 200px;
+width: 25%;
+`
+
+const TleftAlt = styled.div`
+float: left;
+clip-path: polygon(100% 0, 100% 15%, 15% 100%, 0 100%, 0 0);
+shape-outside: polygon(100% 0, 100% 15%, 15% 100%, 0 100%, 0 0);
 height: 200px;
 width: 25%;
 `
@@ -79,9 +101,27 @@ height: 200px;
 width: 25%;
 `
 
-const AbsurdImage = styled(Img)`
+const TrightAlt = styled.div`
+float: right;
+clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 85%, 85% 0);
+shape-outside: polygon(100% 0, 100% 100%, 0 100%, 0 85%, 85% 0);
+height: 200px;
+width: 25%;
+`
+
+const AbsurdImage1 = styled(Img)`
 grid-column: 3 / 4;
-grid-row: 1 / -1;
+grid-row: 1 / 2;
+`
+
+const AbsurdImage2 = styled(Img)`
+grid-column: 1 / 2;
+grid-row: 2 / 3;
+transform: scaleX(-1);
+`
+const AbsurdImage3 = styled(Img)`
+grid-column: 3 / 4;
+grid-row: 3 / 4;
 `
 
 const siteSection = () => {
@@ -108,7 +148,21 @@ const siteSection = () => {
               }
         }
       }
-      projectAbsurd: file(relativePath: { eq: "images/absurd-faces-tall.png" }) {
+      absurdFace1: file(relativePath: { eq: "images/absurd-faces1.png" }) {
+        childImageSharp {
+          fluid(maxWidth:400) {
+            ...GatsbyImageSharpFluid_withWebp
+              }
+        }
+      }
+      absurdFace2: file(relativePath: { eq: "images/absurd-faces2.png" }) {
+        childImageSharp {
+          fluid(maxWidth:400) {
+            ...GatsbyImageSharpFluid_withWebp
+              }
+        }
+      }
+      absurdFace3: file(relativePath: { eq: "images/absurd-faces3.png" }) {
         childImageSharp {
           fluid(maxWidth:400) {
             ...GatsbyImageSharpFluid_withWebp
@@ -131,13 +185,13 @@ const siteSection = () => {
                     </WorkText>
                   </WorkContent1>
                   <WorkContent2>
-                    <WorkImage fluid={data.projectImage2.childImageSharp.fluid} alt="Life With Benjamin"/>
-                    <Tleft/>
-                    <Tright/>
-                    <WorkText>
+                    <WorkImageAlt fluid={data.projectImage2.childImageSharp.fluid} alt="Life With Benjamin"/>
+                    <TleftAlt/>
+                    <TrightAlt/>
+                    <WorkTextAlt>
                     <h3>www.briannasharpe.com</h3>
                     <p>A great description of the site could go here that makes it sound amazing and awesome. Here is some more detail about why it is such a great project.</p>
-                    </WorkText>
+                    </WorkTextAlt>
                   </WorkContent2>
                   <WorkContent3>
                     <WorkImage fluid={data.projectImage3.childImageSharp.fluid} alt="Life With Benjamin"/>
@@ -148,7 +202,9 @@ const siteSection = () => {
                     <p>A great description of the site could go here that makes it sound amazing and awesome. Here is some more detail about why it is such a great project.</p>
                     </WorkText>
                   </WorkContent3>
-                  <AbsurdImage fluid={data.projectAbsurd.childImageSharp.fluid} alt="Life With Benjamin" imgStyle={{ objectFit: 'contain' }}/>
+                  <AbsurdImage1 fluid={data.absurdFace1.childImageSharp.fluid} alt="Faces" imgStyle={{ objectFit: 'contain' }}/>
+                  <AbsurdImage2 fluid={data.absurdFace2.childImageSharp.fluid} alt="Faces" imgStyle={{ objectFit: 'contain' }}/>
+                  <AbsurdImage3 fluid={data.absurdFace3.childImageSharp.fluid} alt="Faces" imgStyle={{ objectFit: 'contain' }}/>
                 </WorkContainer>
             </Section>
     )
