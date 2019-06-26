@@ -1,12 +1,12 @@
 export default {
     color: {
-        primary: '#9ce5f4',
-        secondary: '#2e7da4',
+        primary: '#cccccc',
+        secondary: '#333333',
         textBlack: '#000000',
         textWhite: '#ffffff',
      },
      options: {
-        contentWidth: '100%'
+        contentWidth: '720px'
      },
      screen: {
         tablet: '768px',
