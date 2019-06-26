@@ -4,10 +4,16 @@
   "version": "0.0.1",
   "author": "Eric Howey <ehowey@gmail.com>",
   "dependencies": {
+<<<<<<< HEAD
     "gatsby": "^2.10.0",
     "gatsby-plugin-manifest": "^2.2.0",
     "gatsby-theme-catalyst-core": "^0.0.6",
     "gatsby-theme-catalyst-onepage": "^0.0.3",
+=======
+    "gatsby": "^2.8.2",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-theme-catalyst-core": "*",
+>>>>>>> parent of 716d8ba... Implementing MDX
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
