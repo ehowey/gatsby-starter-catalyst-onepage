@@ -11,16 +11,16 @@ module.exports = {
             ],
     anchorLinks:[
       {
-        name:'Me',
-        link:'#me'
+        name:'Section 1',
+        link:'#section1'
       },
       {
-        name:'Work',
-        link:'#work'
+        name:'Section 2',
+        link:'#section2'
       },
       {
-        name:'Talk to me',
-        link:'#contact'
+        name:'Section 3',
+        link:'#section3'
       }
         ]
   },
