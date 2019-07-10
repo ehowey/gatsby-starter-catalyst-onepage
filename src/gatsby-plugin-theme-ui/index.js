@@ -1,9 +1,6 @@
 import merge from "lodash.merge"
-import { baseTheme } from "gatsby-theme-catalyst-core"
+import { onePageTheme } from "gatsby-theme-catalyst-onepage"
 
-export default merge({}, baseTheme, {
+export default merge({}, onePageTheme, {
     //Updated theme options go here.
-    catalystOptions: {
-        headerPosition: "fixed",
-    },
 })
