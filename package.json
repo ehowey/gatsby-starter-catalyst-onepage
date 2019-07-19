@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "author": "Eric Howey <eric@erichowey.dev>",
   "dependencies": {
-    "gatsby": "^2.13.23",
+    "gatsby": "^2.13.28",
     "gatsby-plugin-manifest": "^2.2.3",
-    "gatsby-theme-catalyst-core": "^0.1.3",
-    "gatsby-theme-catalyst-onepage": "^0.1.3",
+    "gatsby-theme-catalyst-core": "^0.1.4",
+    "gatsby-theme-catalyst-onepage": "^0.1.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
@@ -16,6 +16,7 @@
   },
   "keywords": [
     "gatsby",
+    "gatsbyJS",
     "gatsby-starter"
   ],
   "license": "MIT",
