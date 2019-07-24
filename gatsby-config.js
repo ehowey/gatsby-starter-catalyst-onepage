@@ -22,7 +22,17 @@ module.exports = {
         name:'Section 3',
         link:'#section3'
       }
-        ]
+        ],
+    socialLinks:[
+      {
+        name:'Github',
+        url:'https://www.github.com/ehowey'
+      },
+      {
+        name:'Twitter',
+        url:'https://www.twitter.com/erchwy'
+      }
+    ]
   },
     plugins: [
       'gatsby-theme-catalyst-core',
