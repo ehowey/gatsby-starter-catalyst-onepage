@@ -25,6 +25,10 @@ module.exports = {
         ],
     socialLinks:[
       {
+        name:'e-mail',
+        url:'eric@erichowey.dev'
+      },
+      {
         name:'Github',
         url:'https://www.github.com/ehowey'
       },
