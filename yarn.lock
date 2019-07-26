@@ -5513,10 +5513,10 @@ gatsby-telemetry@^1.1.7:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-catalyst-core@^0.1.6:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-core/-/gatsby-theme-catalyst-core-0.1.6.tgz#8af58250664aefe00cc9a4233d7d41b7947c7770"
-  integrity sha512-CAp2eZ2cPdYrt+N7qn+acIvvbmb0qr8aq2gt3NQ3S1OcOGZyMRfqqXV4mwqt2hH+3HQ370RLuHTuQ4U5oeiIdQ==
+gatsby-theme-catalyst-core@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-core/-/gatsby-theme-catalyst-core-0.1.8.tgz#e7be3d5e639800342c90ef89734f34b9449cde36"
+  integrity sha512-rIO/VGKWP5YORXNC2F+cQ7ZtAo8rOjM/yWj2Ct192eB6s63eV38Hzaq4wO1gjQzXnFHTntMGgQ4oPJOxT0bicA==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-js/mdx" "^1.1.0"
@@ -5539,12 +5539,12 @@ gatsby-theme-catalyst-core@^0.1.6:
     react-icons "^3.7.0"
     theme-ui "^0.2.14"
 
-gatsby-theme-catalyst-onepage@^0.1.7:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-onepage/-/gatsby-theme-catalyst-onepage-0.1.7.tgz#9e887042e15cf2cf2b07f0b32ad6013c9a33e940"
-  integrity sha512-5ZPfoTsYjiv042G5aKdBG/t7+cBcbJr5BPvHXZmu2FwceGNxj+Bx4XjC+tLi27QJVjNMqRc51i61uYqUQiZRJA==
+gatsby-theme-catalyst-onepage@^0.1.9:
+  version "0.1.9"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-onepage/-/gatsby-theme-catalyst-onepage-0.1.9.tgz#592a45c37bd5edd0dae18b6c728cea1f608da048"
+  integrity sha512-/c7ZFNPYIkKZG8KBuSFxvoxYKS5KwTMYdhjJe75dVvGMACppgcWRI3Qy7ADPON9W+d7HMJltSKaj+cxlW+60dA==
   dependencies:
-    gatsby-theme-catalyst-core "^0.1.6"
+    gatsby-theme-catalyst-core "^0.1.8"
     react-scroll "^1.7.12"
 
 gatsby-transformer-sharp@^2.2.3:
