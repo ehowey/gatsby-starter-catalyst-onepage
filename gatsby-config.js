@@ -5,8 +5,8 @@ module.exports = {
     author: `Eric Howey`,
     menuLinks: [
       {
-        name: `Home`,
-        link: `/`
+        name: `Page 1`,
+        link: `/page-1`
       }
     ],
     anchorLinks: [
