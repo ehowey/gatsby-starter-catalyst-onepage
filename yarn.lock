@@ -5227,7 +5227,7 @@ gatsby-page-utils@^0.0.5:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
-gatsby-plugin-manifest@^2.2.3:
+gatsby-plugin-manifest@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.4.tgz#62d144c9fcdf2c476a460bcaacc26359db6e486d"
   integrity sha512-zhRLmqWzp9oMfxo2S01Lev0QL7YRLSLNzseGb/tcyR5YOhBPMJzObHnD6MORbKPnxYWzVoghqf5/DjmzTVsacw==
@@ -5424,10 +5424,10 @@ gatsby-telemetry@^1.1.7:
     stack-utils "1.0.2"
     uuid "3.3.2"
 
-gatsby-theme-catalyst-core@^0.1.8:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-core/-/gatsby-theme-catalyst-core-0.1.8.tgz#e7be3d5e639800342c90ef89734f34b9449cde36"
-  integrity sha512-rIO/VGKWP5YORXNC2F+cQ7ZtAo8rOjM/yWj2Ct192eB6s63eV38Hzaq4wO1gjQzXnFHTntMGgQ4oPJOxT0bicA==
+gatsby-theme-catalyst-core@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-core/-/gatsby-theme-catalyst-core-0.1.10.tgz#d08556cc01e4b91fcaf8ce334d9aba110da70a7d"
+  integrity sha512-ljH9cxvVLK2S5XoGbQ8iaPiTFwqwQK6DDzfUEmcrJKXue8nscmyasYlc4O/SRnnjpn71qpNB+5SX7lmlss5RxQ==
   dependencies:
     "@emotion/core" "^10.0.14"
     "@mdx-js/mdx" "^1.1.0"
@@ -5435,6 +5435,7 @@ gatsby-theme-catalyst-core@^0.1.8:
     "@mdx-js/tag" "^0.20.3"
     deepmerge "^4.0.0"
     gatsby-image "^2.2.6"
+    gatsby-plugin-manifest "^2.2.4"
     gatsby-plugin-mdx "^1.0.14"
     gatsby-plugin-offline "^2.2.4"
     gatsby-plugin-react-helmet "^3.1.2"
@@ -5450,12 +5451,12 @@ gatsby-theme-catalyst-core@^0.1.8:
     react-icons "^3.7.0"
     theme-ui "^0.2.14"
 
-gatsby-theme-catalyst-onepage@^0.1.9:
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-onepage/-/gatsby-theme-catalyst-onepage-0.1.9.tgz#592a45c37bd5edd0dae18b6c728cea1f608da048"
-  integrity sha512-/c7ZFNPYIkKZG8KBuSFxvoxYKS5KwTMYdhjJe75dVvGMACppgcWRI3Qy7ADPON9W+d7HMJltSKaj+cxlW+60dA==
+gatsby-theme-catalyst-onepage@^0.1.13:
+  version "0.1.13"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-catalyst-onepage/-/gatsby-theme-catalyst-onepage-0.1.13.tgz#cc199104080a3d0f87eb22fe8e2898fdf605a188"
+  integrity sha512-qnmQ1CGoApItTPoiHIdscz18aPSjwrPTdHkJ6V4H6KxxjcKGJdFcDIxUoW1zy3TeUkjPQNt8kLqZDnH1Vega8w==
   dependencies:
-    gatsby-theme-catalyst-core "^0.1.8"
+    gatsby-theme-catalyst-core "^0.1.10"
     react-scroll "^1.7.12"
 
 gatsby-transformer-sharp@^2.2.3:
