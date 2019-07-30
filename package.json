@@ -1,11 +1,11 @@
 {
   "name": "gatsby-starter-catalyst-onepage",
   "description": "A basic site starter based on the Gatsby-Theme-Catalyst-Onepage",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Eric Howey <eric@erichowey.dev>",
   "dependencies": {
     "gatsby": "^2.13.42",
-    "gatsby-theme-catalyst-onepage": "^0.1.13",
+    "gatsby-theme-catalyst-onepage": "^0.1.14",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
