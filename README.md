@@ -3,7 +3,7 @@
 **Blazing Start**
 ```sh
 # create a new Gatsby site using the catalyst onepage starter site
-gatsby new my-catalyst-starter-core https://github.com/ehowey/gatsby-starter-catalyst-core
+gatsby new my-catalyst-starter-onepage https://github.com/ehowey/gatsby-starter-catalyst-onepage
 ```
 [Read the Gatsby Quick Start Guide](https://www.gatsbyjs.org/docs/quick-start)
 
