@@ -1,119 +1,30 @@
 import { SEO } from "gatsby-theme-catalyst-core";
+import Section1 from "../components/sections/section1";
+import Section2 from "../components/sections/section2";
+import Section3 from "../components/sections/section3";
 
 <SEO title="Gatsby Starter Catalyst Onepage" />
 
 # Gatsby Starter Catalyst Onepage
 
-The Catalyst series of themes and starters for [GatsbyJS](https://www.gatsbyjs.org/) were designed to provide an opinoinated set of progressive themes and starters that can be used to accelerate web development. I built this to meet my own needs and imagine that others would also have similar needs.
+[Documentation](https://github.com/ehowey/gatsby-theme-catalyst-onepage) is available on Github.
 
-## Catalyst Themes and Starters
+This is a child theme for `gatsby-theme-catalyst-core` and extends the core themes functionality to add single page navigation using anchor links and [react-scroll](https://github.com/fisshy/react-scroll).
 
-- [Gatsby-Theme-Catalyst-Core](https://github.com/ehowey/gatsby-theme-catalyst-core)
-  - [Gatsby-Starter-Catalyst-Basic](https://github.com/ehowey/gatsby-starter-catalyst-basic) - implements the core theme in a starter site to make installation and customization easier.
-- [Gatsby-Theme-Catalyst-Onepage](https://github.com/ehowey/gatsby-theme-catalyst-onepage)
-  - [Gatsby-Starter-Catalyst-Onepage](https://github.com/ehowey/gatsby-starter-catalyst-onepage) - implements the onepage theme in a starter site to make installation and customization easier.
+Unfortunately the `gatsby-remark-autolink-headers` plugin is not working properly with MDX at this time so you need to revert to using html in MDX or components which specify a section ID. This will hopefully be addressed soon enabling raw MDX content with specified section IDs.
 
-## Dependencies
-
-- [Gatsby-Theme-Catalyst-Core](https://github.com/ehowey/gatsby-theme-catalyst-core)
-
-### Shadowed Components
-
-The following components (other than theme-ui) are modified from gatsby-theme-catalyst-core:
-
-**src/gatsby-theme-catalyst-core/components/nav.js**
-
-The main change in this theme is modification of the navigation element to provide built in support for single page scrolling navigation use `react-anchor-link-smooth-scroll` and `react-scrollspy`. This allows the theme to track where the user is on the page and also to provide a smooth scrolling experience. The navigation menu is automatically created from the `gatsby-config.js` file using the `anchorLinks` array. There is not currently support for blended anchor links and standard internal links in the Nav menu however this is a planned feature.
-
-<section id="section1">
-  <h2>Section 1</h2>
-  <p>
-    Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra
-    auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum
-    ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-    Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi
-    sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis
-    laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.
-    Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur
-    sit amet mauris.{" "}
-  </p>
-  <p>
-    Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia
-    sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam.
-    Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices
-    sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.
-    Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut
-    orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
-    pretium blandit orci.{" "}
-  </p>
-  <p>
-    Ut eu diam at pede suscipit sodales. Aenean lectus elit, fermentum non,
-    convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis
-    et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet.
-    Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem
-    ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-    Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at
-    nibh elementum imperdiet.{" "}
-  </p>
+```
+<section id="#section1">
+...content here
 </section>
+```
 
-<section id="section2">
-  <h2>Section 2</h2>
-  <p>
-    Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper
-    porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-    sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-    Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur
-    tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.{" "}
-  </p>
-  <p>
-    Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc
-    egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus
-    non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla
-    metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque
-    volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent
-    per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna
-    non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis
-    turpis. Nulla facilisi.{" "}
-  </p>
-  <p>
-    Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
-    imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in
-    justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus
-    magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at
-    interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus
-    orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui.
-    Praesent blandit dolor. Sed non quam.{" "}
-  </p>
-</section>
+<Section1 />
 
-<section id="section3">
-  <h2>Section 3</h2>
-  <p>
-    In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede
-    facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et,
-    augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim.
-    Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla
-    facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus
-    a tortor. Integer id quam. Morbi mi.{" "}
-  </p>
-  <p>
-    Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc
-    egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus
-    non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla
-    metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque
-    volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent
-    per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna
-    non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis
-    turpis. Nulla facilisi.{" "}
-  </p>
-  <p>
-    Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia
-    sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam.
-    Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices
-    sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.
-    Vestibulum nisi lectus, commodo ac, facilisis ac, ultricies eu, pede. Ut
-    orci risus, accumsan porttitor, cursus quis, aliquet eget, justo. Sed
-    pretium blandit orci.{" "}
-  </p>
-</section>
+![A Picture](../images/image1.jpg)
+
+<Section2 />
+
+![Anoter Picture](../images/image2.jpg)
+
+<Section3 />
