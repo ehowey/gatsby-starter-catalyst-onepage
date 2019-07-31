@@ -3,6 +3,7 @@ module.exports = {
     title: `Catalyst Onepage`,
     description: `Child theme and starter from gatsby-theme-catalyst-core`,
     author: `Eric Howey`,
+    siteUrl: `https://gatsby-starter-catalyst-onepage.netlify.com`, //Change to you site address, required for sitemap.xml and robots.txt file
     menuLinks: [
       {
         name: `Not Used`, //Placeholder due to graphql
