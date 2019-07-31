@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `Catalyst Onepage`,
-    description: `Speed up your Gatsby development workflow. Designed as an opinionated and high speed starter.`,
+    description: `Child theme and starter from gatsby-theme-catalyst-core`,
     author: `Eric Howey`,
+    menuLinks: [
+      {
+        name: `Not Used`, //Placeholder due to graphql
+        link: `#` //Placeholder due to graphql
+      }
+    ],
     anchorLinks: [
       {
         name: `Section 1`,
