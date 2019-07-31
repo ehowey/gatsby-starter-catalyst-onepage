@@ -3,12 +3,6 @@ module.exports = {
     title: `Catalyst Onepage`,
     description: `Speed up your Gatsby development workflow. Designed as an opinionated and high speed starter.`,
     author: `Eric Howey`,
-    menuLinks: [
-      {
-        name: `Page 1`,
-        link: `/page-1`
-      }
-    ],
     anchorLinks: [
       {
         name: `Section 1`,
