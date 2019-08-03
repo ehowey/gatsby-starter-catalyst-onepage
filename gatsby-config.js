@@ -6,8 +6,8 @@ module.exports = {
     siteUrl: `https://gatsby-starter-catalyst-onepage.netlify.com`, //Change to you site address, required for sitemap.xml and robots.txt file
     menuLinks: [
       {
-        name: `Not Used`, //Placeholder due to graphql
-        link: `#` //Placeholder due to graphql
+        name: `Page-1`, //Placeholder due to graphql
+        link: `/page-1` //Placeholder due to graphql
       }
     ],
     anchorLinks: [
