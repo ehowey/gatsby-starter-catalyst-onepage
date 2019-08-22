@@ -4,8 +4,8 @@
   "version": "0.2.4",
   "author": "Eric Howey <eric@erichowey.dev>",
   "dependencies": {
-    "gatsby": "^2.13.74",
-    "gatsby-theme-catalyst-onepage": "^0.2.4",
+    "gatsby": "^2.13.52",
+    "gatsby-theme-catalyst-onepage": "^0.2.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
